@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+const routes = require('./routes');
 
 const PORT = process.env.port || 3001;
 
@@ -11,15 +12,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(express.static('public'));
 
-// GET Route for homepage
-app.get('/', (req, res) =>
-  res.sendFile(path.join(__dirname, '/public/index.html'))
-);
-
-// GET Route for notes page
-app.get('/notes', (req, res) =>
-  res.sendFile(path.join(__dirname, '/public/pages/notes.html'))
-);
+app.use(routes);
 
 app.listen(PORT, () =>
   console.log(`App listening at http://localhost:${PORT}`)
