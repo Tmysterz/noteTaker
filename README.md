@@ -47,3 +47,10 @@
 
   if you have any questions about the repo, Please feel free to open a issue or contact me directly at terrencemccarthysnkrs@gmail.com
   You can find more of my work at https://github.com/Tmysterz
+
+  ## Screenshot 
+
+  ![Screenshot](./images/noteTakerSS.png)
+
+  ## Deployable application
+  [noteTaker](https://boiling-retreat-44263-48d1e7f518eb.herokuapp.com/)
